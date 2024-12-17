@@ -117,13 +117,33 @@ To reduce the computational load, we **discretized** the continuous observation 
 
 ---
 
-## Graphical Results
+## Graphical Results :
 
-![Rewards Vs Episodes](results/Training_graph.png)
-
-
-
+![Rewards Vs Episodes](results/Training_graph.png)  
 ![Testing Graph](results/Testing_graph.png)
+
+### **Requirements** 🛠️
+
+- **Python 3.8+**
+- **Libraries**:
+  - `numpy`
+  - `matplotlib`
+  - `gymnasium`
+- **Custom Environment**: `gym_kuiper_escape`
+    For setting up environment, one must follow [Kuiper Escape Environment Documentation](https://github.com/jdegregorio/gym-kuiper-escape) .
+---
+
+### **Future Improvements** 🚀
+
+- Implement **Deep Q-learning (DQN)** to handle larger and more complex environments.
+- Explore **reward shaping** techniques for more refined learning.
+- Extend the environment to include dynamic obstacles and more complex challenges.
+- Optimize the training process for faster convergence and better performance in larger-scale environments.
+
+---
+
+
+
 
 
 
