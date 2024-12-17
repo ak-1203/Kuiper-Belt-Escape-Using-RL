@@ -14,10 +14,10 @@ The project aims to simulate and analyze an RL agent’s navigation within a **c
 ## Kuiper Escape Environment Overview
 The environment is a dynamic space populated with asteroids of varying sizes, speeds, and trajectories. The agent, represented as a spaceship, aims to navigate this challenging environment while avoiding collisions. The primary objective is to survive for as long as possible, thereby improving its game score and maximizing the total cumulative reward.  
 
-<img src="results/gifs/env_overview_gif.gif" width="500" height="500" alt="env overview gif">  
+<img src="results/gifs/env_overview_gif.gif" width="350" height="350" alt="env overview gif">  
 
 ## Observation Space
-<img src="results/env_overview02.png" width="500" height="500" alt="obs space"> 
+<img src="results/env_overview02.png" width="350" height="350" alt="obs space"> 
 The state is a virtual lidar system that emits beams in all directions to capture distances and object characteristics, with a configurable array size and observation space.
 
 The observation data (for each beam in the lidar array):
@@ -35,7 +35,7 @@ Here:
 ---
 
 ## Action Space
-The agent has the following discrete set of actions :  
+The agent has the following discrete set of actions:  
 
 <!--- **0:** Don't move  
 - **1:** Up  
@@ -73,17 +73,21 @@ else:
 ---
 ## Learning Process results
 
-Initially, the agent performs random actions, primarily navigating along the edges of the environment. During this phase, it explores the space without a clear strategy, gradually gathering information about its surroundings to inform future decision-making.  
+Initially, the agent performs random actions, primarily navigating along the edges of the environment. During this phase, it explores the space without a clear strategy, gradually gathering information about its surroundings to inform future decision-making :  
 
 <img src="results/gifs/initial_exploration.gif" width="300" height="300" alt="Gif description">  
 
-As the number of episodes increases, the agent progressively enhances its navigation skills, adopting a more strategic approach to effectively avoid obstacles.
+As the number of episodes increases, the agent progressively enhances its navigation skills, adopting a more strategic approach to effectively avoid obstacles : 
+
 <div style="display: flex; justify-content: space-between;">
   <img src="results/gifs/learning01.gif" width="300" height="300" alt="Gif 1">
   <img src="results/gifs/learning02.gif" width="300" height="300" alt="Gif 2">
 </div>  
 
-After a substantial number of episodes (eg. 12k ) , the agent has acquired sufficient learning, now navigating the environment with skill and precision, effectively avoiding obstacles. Its movements have become increasingly efficient, demonstrating a clear understanding of its surroundings and an enhanced ability to adapt to challenges.
+
+  
+After a substantial number of episodes (eg. 12k ) , the agent has acquired sufficient learning, now navigating the environment with skill and precision, effectively avoiding obstacles. Its movements have become increasingly efficient, demonstrating a clear understanding of its surroundings and an enhanced ability to adapt to challenges.  
+**Final Results:**
 
 <div style="display: flex; justify-content: space-between;">
   <img src="results/gifs/result02.gif" width="300" height="300" alt="Gif 1">
