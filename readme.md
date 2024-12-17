@@ -6,13 +6,14 @@ In this project, we trained an agent in a challenging and dynamic **Kuiper Escap
 To know more about the environment follow this repository :
 [Kuiper Escape Environment Documentation](https://github.com/jdegregorio/gym-kuiper-escape)  
 
-## Aim
+## Aim : 
 The project aims to simulate and analyze an RL agent’s navigation within a **custom-built Kuiper Belt environment**. The agent learns optimal strategies for:
 - **Avoiding obstacles (rocks)**  
 - **Maximizing rewards through efficient movement**  
 
 ## Kuiper Escape Environment Overview
-The environment is a dynamic space populated with asteroids of varying sizes, speeds, and trajectories. The agent, represented as a spaceship, aims to navigate this challenging environment while avoiding collisions. The primary objective is to survive for as long as possible, thereby improving its game score and maximizing the total cumulative reward.  
+The environment is a dynamic space populated with asteroids of varying sizes, speeds, and trajectories. The agent, represented as a spaceship, aims to navigate this challenging environment while avoiding collisions.  
+The primary objective is to survive for as long as possible, thereby improving its game score and maximizing the total cumulative reward.  
 
 <img src="results/gifs/env_overview_gif.gif" width="350" height="350" alt="env overview gif">  
 
@@ -26,7 +27,8 @@ The observation data (for each beam in the lidar array):
    * 0 if terminated at edge of screen, or at max radius distance
    * 1 if collided with a rock
 
-For example, if the number of lidar beams is set to 8, the observation space would be a 16x1 array. The observation data might look like this:  
+For example, if the number of lidar beams is set to 8, the observation space would be a 16x1 array.  
+The observation data might look like this:  
 `[0, 0.1, 0.2, 0.3, 0.5, 0.6, 0.2, 0.3 | 0, 1, 0, 0, 0, 1, 0, 1]`  
 Here:
 - The **first half** (8 elements) represents the normalized distances of obstacles (e.g., rocks) from the agent.
@@ -134,7 +136,8 @@ To reduce the computational load, we **discretized** the continuous observation 
   - `matplotlib`
   - `gymnasium`
 - **Custom Environment**: `gym_kuiper_escape`
-    For setting up environment, one must follow [Kuiper Escape Environment Documentation](https://github.com/jdegregorio/gym-kuiper-escape) .
+    For setting up environment, one must follow
+    [Kuiper Escape Environment Documentation](https://github.com/jdegregorio/gym-kuiper-escape) .
 ---
 
 ### **Future Improvements** 🚀
