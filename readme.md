@@ -3,7 +3,7 @@
 ## Project Overview :
 In this project, we trained an agent in a challenging and dynamic **Kuiper Escape environment** using the **Q-learning algorithm**. The environment features a **continuous state space**, discretized for optimization, and includes obstacles like rocks that the agent must strategically avoid. The goal is to maximize rewards through efficient exploration and precise navigation.
 
-To know more about the environment follow this repository :
+To know more about the environment follow this repository :  
 [Kuiper Escape Environment Documentation](https://github.com/jdegregorio/gym-kuiper-escape)  
 
 ## Aim : 
@@ -30,7 +30,8 @@ The observation data (for each beam in the lidar array):
 For example, if the number of lidar beams is set to 8, the observation space would be a 16x1 array.  
 The observation data might look like this:  
 `[0, 0.1, 0.2, 0.3, 0.5, 0.6, 0.2, 0.3 | 0, 1, 0, 0, 0, 1, 0, 1]`  
-Here:
+
+Here,
 - The **first half** (8 elements) represents the normalized distances of obstacles (e.g., rocks) from the agent.
 - The **second half** (8 elements) indicates collision status, where 1 represents a collision and 0 represents no collision.
 
@@ -62,7 +63,7 @@ The reward function was designed to maximize the agent's survival time in the en
 - A strong **negative reward** was given as a penalty for collisions, discouraging the agent from hitting obstacles.  
 - A **positive reward** was defined based on the agent's proximity to the center of the screen. The closer the agent remained to the center, the higher the reward.  
 
-For example, the following reward function, which varies inversely with the distance from the center, was used:
+For example, the following reward function, which varies inversely with the distance from the center, was used :
 
 ```python
 if dist_from_center < 0.35:
