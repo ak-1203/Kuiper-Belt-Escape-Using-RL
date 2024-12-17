@@ -9,7 +9,7 @@ import matplotlib
 import matplotlib.pyplot as plt 
 matplotlib.use('Agg')
 
-env = gym.make('kuiper-escape-base-v0',mode='None',rock_rate = 0.1,player_speed = 0.5,rock_size_min = 0.08,rock_size_max = 0.12, )
+env = gym.make('kuiper-escape-base-v0',mode='None',rock_rate = 0.4,player_speed = 0.5,rock_size_min = 0.08,rock_size_max = 0.12, )
 
 max_steps=1000 #max_steps in an episode
 
